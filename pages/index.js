@@ -1,4 +1,6 @@
-import { Hero } from "../sections";
+import { Hero} from "../sections";
+import { MediaAndList } from "../sections";
+import { mediaAndListData } from '../data/mediaAndList';
 
 const heroProps = {
   image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
@@ -20,7 +22,7 @@ export default function Home() {
       </head>
       <div>
         <Hero {...heroProps} />
-        {/** Other sections */}
+        <MediaAndList {...mediaAndListData} />
       </div>
     </>
   );

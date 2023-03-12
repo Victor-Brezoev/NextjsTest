@@ -61,6 +61,11 @@ export const StyledButton = styled(({ color = "primary", variant = "contained", 
   cursor: pointer;
   border: none;
   color: white;
+  @media (max-width: 1024px) {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
   ${({ variant }) => buttonVariants[variant]}
 `;
 

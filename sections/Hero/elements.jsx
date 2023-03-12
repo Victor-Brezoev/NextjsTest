@@ -25,10 +25,19 @@ export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
   width: 30%;
   margin-left: 11.125rem;
   font-family: sans-serif;
+  @media (max-width: 1024px) {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
 `;
 
 export const StyledCTAContainer = styled(({ ...props }) => <div {...props} />)`
   display: flex;
+  @media (max-width: 1024px) {
+    margin-block: 30px;
+    display: block;
+  }
 `;
 
 export const StyledImageContainer = styled(({ ...props }) => <div {...props} />)`
@@ -37,4 +46,7 @@ export const StyledImageContainer = styled(({ ...props }) => <div {...props} />)
   width: 100%;
   height: 100%;
   margin-left: auto;
+  @media (max-width: 1024px) {
+    margin-left:0;
+  }
 `;

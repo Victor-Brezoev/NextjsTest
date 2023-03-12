@@ -9,4 +9,9 @@ export const StyledSectionContainer = styled(({ topMargin = 0, bottomMargin = 0,
   margin-right: auto;
   margin-top: ${({ topMargin }) => topMargin}rem;
   margin-bottom: ${({ bottomMargin }) => bottomMargin}rem;
+
+  @media (max-width: 1024px){
+    flex-direction: column;
+    align-items: center;
+  }
 `;
