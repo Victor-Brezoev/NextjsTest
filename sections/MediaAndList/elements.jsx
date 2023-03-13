@@ -56,6 +56,5 @@ export const Cards = styled.div`
   gap: 2.625rem;
   @media (max-width: 1024px) {
     gap: 2.25rem;
-    margin-left: 85px;
   }
 `;
