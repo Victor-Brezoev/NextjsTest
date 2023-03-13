@@ -73,6 +73,9 @@ export const CardMedia = styled(({ ...props }) => <div {...props} />)`
   align-items: center;
   justify-content: center;
   margin-right: 6px;
+  @media (max-width: 550px) {
+    flex: 0 0 100px;
+  }
 `;
 export const CardTitle = styled(({ ...props }) => <h3 {...props} />)`
   font-weight: 700;
