@@ -23,6 +23,7 @@ export const mediaAndListData = {
         text: "Visit our latest article",
         target: "_blank",
       },
+      id: 1,
     },
     {
       image: {
@@ -39,6 +40,7 @@ export const mediaAndListData = {
         text: "Visit our latest article",
         target: "_blank",
       },
+      id: 2,
     },
     {
       image: {
@@ -55,6 +57,7 @@ export const mediaAndListData = {
         text: "Visit our latest article",
         target: "_blank",
       },
+      id: 3,
     },
   ],
 };

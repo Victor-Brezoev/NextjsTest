@@ -40,9 +40,9 @@ export const MediaAndList = ({ image, title, description, listItems }) => {
 
           <Cards>
             {listItems &&
-              listItems.map((element, index) => (
+              listItems.map((element, id) => (
                 <Card
-                  key={index}
+                  key={id}
                   title={element.title}
                   description={element.description}
                   image={element.image}
