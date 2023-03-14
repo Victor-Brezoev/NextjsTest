@@ -2,21 +2,21 @@ import Image from "next/image";
 import { Card } from "../../collections";
 
 import {
-  WrapperMediaAndList,
-  ContainerMediaAndList,
-  HeaderMediaAndList,
-  InnerMediaAndList,
+  StyledWrapperMediaAndList,
+  StyledContainerMediaAndList,
+  StyledHeaderMediaAndList,
+  StyledInnerMediaAndList,
   StyledImageContainer,
   StyledMediaAndListHeading,
   StyledMediaAndListSubheading,
-  Cards,
+  StyledCards,
 } from "./elements";
 
 export const MediaAndList = ({ image, title, description, listItems }) => {
   return (
-    <WrapperMediaAndList>
-      <ContainerMediaAndList>
-        <HeaderMediaAndList>
+    <StyledWrapperMediaAndList>
+      <StyledContainerMediaAndList>
+        <StyledHeaderMediaAndList>
           {title && (
             <StyledMediaAndListHeading>{title}</StyledMediaAndListHeading>
           )}
@@ -25,9 +25,9 @@ export const MediaAndList = ({ image, title, description, listItems }) => {
               {description}
             </StyledMediaAndListSubheading>
           )}
-        </HeaderMediaAndList>
+        </StyledHeaderMediaAndList>
 
-        <InnerMediaAndList>
+        <StyledInnerMediaAndList>
           <StyledImageContainer>
             <Image
               layout="responsive"
@@ -38,7 +38,7 @@ export const MediaAndList = ({ image, title, description, listItems }) => {
             />
           </StyledImageContainer>
 
-          <Cards>
+          <StyledCards>
             {listItems &&
               listItems.map((element, id) => (
                 <Card
@@ -49,9 +49,9 @@ export const MediaAndList = ({ image, title, description, listItems }) => {
                   link={element.link}
                 />
               ))}
-          </Cards>
-        </InnerMediaAndList>
-      </ContainerMediaAndList>
-    </WrapperMediaAndList>
+          </StyledCards>
+        </StyledInnerMediaAndList>
+      </StyledContainerMediaAndList>
+    </StyledWrapperMediaAndList>
   );
 };

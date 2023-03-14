@@ -1,5 +1,4 @@
-import { Hero } from "../sections";
-import { MediaAndList } from "../sections";
+import { Hero, MediaAndList } from "~/sections";
 import { mediaAndListData } from "../data/mediaAndList";
 import Head from "next/head";
 

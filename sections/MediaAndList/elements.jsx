@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { SectionHeading } from "../../components/Typography/SectionHeading";
-import { SectionSubheading } from "../../components/Typography/SectionSubheading";
+import { SectionHeading, SectionSubheading } from "~/components";
 
 export const StyledMediaAndListHeading = styled(SectionHeading)`
   margin-block: 0;
@@ -21,22 +20,28 @@ export const StyledImageContainer = styled(({ ...props }) => (
     max-width: 290px;
   }
 `;
-export const WrapperMediaAndList = styled(({ ...props }) => <div {...props} />)`
+export const StyledWrapperMediaAndList = styled(({ ...props }) => (
+  <div {...props} />
+))`
   padding-block: 100px;
 `;
 
-export const ContainerMediaAndList = styled(({ ...props }) => (
+export const StyledContainerMediaAndList = styled(({ ...props }) => (
   <div {...props} />
 ))`
   margin: 0 auto;
   padding-inline: 20px;
   max-width: 1280px;
 `;
-export const HeaderMediaAndList = styled(({ ...props }) => <div {...props} />)`
+export const StyledHeaderMediaAndList = styled(({ ...props }) => (
+  <div {...props} />
+))`
   text-align: center;
   margin-bottom: 50px;
 `;
-export const InnerMediaAndList = styled(({ ...props }) => <div {...props} />)`
+export const StyledInnerMediaAndList = styled(({ ...props }) => (
+  <div {...props} />
+))`
   background: url("/img/background.png") right center/contain no-repeat;
   background-position: -106% -3%;
   display: flex;
@@ -49,7 +54,7 @@ export const InnerMediaAndList = styled(({ ...props }) => <div {...props} />)`
   }
 `;
 
-export const Cards = styled.div`
+export const StyledCards = styled.div`
   color: ${(props) => props.theme.black};
   display: flex;
   flex-direction: column;

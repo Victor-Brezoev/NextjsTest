@@ -1,11 +1,20 @@
 import styled from "styled-components";
-import { Button, SectionContainer, SectionBigHeading, SectionSubheading } from "~/components";
+import {
+  Button,
+  SectionContainer,
+  SectionBigHeading,
+  SectionSubheading,
+} from "~/components";
 
-export const StyledContainer = styled(({ height, ...props }) => <SectionContainer {...props} />)`
+export const StyledContainer = styled(({ height, ...props }) => (
+  <SectionContainer {...props} />
+))`
   align-items: center;
 `;
 
-export const StyledGetStartedBtn = styled((props) => <Button {...props} variant="contained" color="main" />)`
+export const StyledGetStartedBtn = styled((props) => (
+  <Button {...props} variant="contained" color="main" />
+))`
   margin-top: 4.375rem;
   padding-top: 0;
   padding-bottom: 0;
@@ -16,7 +25,9 @@ export const StyledTitle = styled((props) => <SectionBigHeading {...props} />)`
   color: black;
 `;
 
-export const StyledDescription = styled((props) => <SectionSubheading {...props} />)`
+export const StyledDescription = styled((props) => (
+  <SectionSubheading {...props} />
+))`
   margin: 1.563rem 0 0;
 `;
 
@@ -40,13 +51,15 @@ export const StyledCTAContainer = styled(({ ...props }) => <div {...props} />)`
   }
 `;
 
-export const StyledImageContainer = styled(({ ...props }) => <div {...props} />)`
+export const StyledImageContainer = styled(({ ...props }) => (
+  <div {...props} />
+))`
   max-width: 32.03rem;
   max-height: 65rem;
   width: 100%;
   height: 100%;
   margin-left: auto;
   @media (max-width: 1024px) {
-    margin-left:0;
+    margin-left: 0;
   }
 `;

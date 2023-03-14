@@ -7,6 +7,7 @@ export const mediaAndListData = {
   },
   title: "Managed agency selections",
   description: "Strengthen your onboarding process",
+
   listItems: [
     {
       image: {
@@ -25,6 +26,7 @@ export const mediaAndListData = {
       },
       id: 1,
     },
+
     {
       image: {
         src: "/icons/icon-search.svg",
@@ -42,6 +44,7 @@ export const mediaAndListData = {
       },
       id: 2,
     },
+
     {
       image: {
         src: "/icons/icon-pitch.svg",

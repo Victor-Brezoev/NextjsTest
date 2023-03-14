@@ -1,7 +1,7 @@
 // Styled elements for the Card go here
 import styled from "styled-components";
 
-export const CardMain = styled(({ ...props }) => <div {...props} />)`
+export const StyledCardMain = styled(({ ...props }) => <div {...props} />)`
   display: flex;
   align-items: center;
   background: #f4f4f4;
@@ -10,7 +10,7 @@ export const CardMain = styled(({ ...props }) => <div {...props} />)`
   border-radius: 6px;
   position: relative;
   border: 2px solid transparent;
-  transition: border-color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     border-color: ${(props) => props.theme.main};
@@ -19,6 +19,11 @@ export const CardMain = styled(({ ...props }) => <div {...props} />)`
       text-decoration: underline;
       color: ${(props) => props.theme.main};
     }
+    img {
+      filter: invert(42%) sepia(93%) saturate(20000%) hue-rotate(206deg)
+        brightness(119%) contrast(119%);
+    }
+    transform: scale(0.98);
   }
 
   &:nth-child(1) {
@@ -48,9 +53,9 @@ export const CardMain = styled(({ ...props }) => <div {...props} />)`
     }
   }
 `;
-export const CardInner = styled(({ ...props }) => <div {...props} />)``;
+export const StyledCardInner = styled(({ ...props }) => <div {...props} />)``;
 
-export const CardLink = styled(({ ...props }) => <div {...props} />)`
+export const StyledCardLink = styled(({ ...props }) => <div {...props} />)`
   text-decoration: none;
   position: absolute;
   top: 0;
@@ -66,18 +71,19 @@ export const CardLink = styled(({ ...props }) => <div {...props} />)`
     height: 100%;
   }
 `;
-export const CardMedia = styled(({ ...props }) => <div {...props} />)`
+export const StyledCardMedia = styled(({ ...props }) => <div {...props} />)`
   display: flex;
   flex: 0 0 130px;
   height: 130px;
   align-items: center;
   justify-content: center;
   margin-right: 6px;
+
   @media (max-width: 550px) {
     flex: 0 0 100px;
   }
 `;
-export const CardTitle = styled(({ ...props }) => <h3 {...props} />)`
+export const StyledCardTitle = styled(({ ...props }) => <h3 {...props} />)`
   font-weight: 700;
   font-size: 20px;
   font-family: Poppins;
@@ -86,7 +92,7 @@ export const CardTitle = styled(({ ...props }) => <h3 {...props} />)`
   margin-block: 0;
   transition: color 0.3s ease-in-out;
 `;
-export const CardText = styled(({ ...props }) => <p {...props} />)`
+export const StyledCardText = styled(({ ...props }) => <p {...props} />)`
   font-family: Poppins;
   font-weight: 400;
   font-size: 0.825rem;

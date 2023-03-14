@@ -3,19 +3,19 @@ import Image from "next/image";
 import Link from "next/link";
 
 import {
-  CardMain,
-  CardLink,
-  CardMedia,
-  CardInner,
-  CardTitle,
-  CardText,
+  StyledCardMain,
+  StyledCardLink,
+  StyledCardMedia,
+  StyledCardInner,
+  StyledCardTitle,
+  StyledCardText,
 } from "./elements";
 
 export const Card = ({ image, title, description, link }) => {
   return (
-    <CardMain>
+    <StyledCardMain>
       {link && link.text && link.href && (
-        <CardLink>
+        <StyledCardLink>
           {link.target && link.target === "_blank" ? (
             <a href={link.href} rel="noreferrer noopener" target="_blank">
               {link.text}
@@ -23,22 +23,22 @@ export const Card = ({ image, title, description, link }) => {
           ) : (
             <Link href={link.href}>{link.text}</Link>
           )}
-        </CardLink>
+        </StyledCardLink>
       )}
-      <CardMedia>
+      <StyledCardMedia>
         <Image
           src={image.src}
           alt={image.alt}
           height={image.height}
           width={image.width}
         />
-      </CardMedia>
-      <CardInner>
-        {title && <CardTitle>{title}</CardTitle>}
+      </StyledCardMedia>
+      <StyledCardInner>
+        {title && <StyledCardTitle>{title}</StyledCardTitle>}
         {description && (
-          <CardText dangerouslySetInnerHTML={{ __html: description }} />
+          <StyledCardText dangerouslySetInnerHTML={{ __html: description }} />
         )}
-      </CardInner>
-    </CardMain>
+      </StyledCardInner>
+    </StyledCardMain>
   );
 };

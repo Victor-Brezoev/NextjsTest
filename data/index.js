@@ -1,0 +1,1 @@
+export { mediaAndListData } from "./mediaAndList";
